@@ -1,30 +1,35 @@
 # 💭 Reflection: Game Glitch Investigator
 
-Answer each question in 3 to 5 sentences. Be specific and honest about what actually happened while you worked. This is about your process, not trying to sound perfect.
+> Answer each question in 3 to 5 sentences. Be specific and honest about what actually happened while you worked. This is about your process, not trying to sound perfect.
 
 ## 1. What was broken when you started?
 
-- What did the game look like the first time you ran it?
-- List at least two concrete bugs you noticed at the start  
-  (for example: "the hints were backwards").
+> What did the game look like the first time you ran it?
+>
+> List at least two concrete bugs you noticed at the start  
+>  (for example: "the hints were backwards").
 
 **Bug Reproduction Log**
 
 Document at least 3 bugs you found. Add rows as needed.
 
-| Input | Expected Behavior | Actual Behavior | Console Output / Error |
-|-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| Input       | Expected Behavior | Actual Behavior | Console Output / Error | Suspected Code Location |
+| ----------- | ----------------- | --------------- | ---------------------- | ----------------------- |
+| guess of 4  | Go higher hint    | 📉 Go LOWER!    | none                   | `app.py`, `check_guess` |
+| guess of 50 | Go lower hint     | 📈 Go HIGHER!   | none                   | `app.py`, `check_guess` |
 
 ---
 
 ## 2. How did you use AI as a teammate?
 
-- Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
-- Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-- Give one example of an AI suggestion you did not accept as written (including what the AI suggested, why you rejected or changed it, and how you verified your version). It does not have to be a suggestion that was wrong: over-engineered, out of scope, harder to read, or a poor fit for this codebase all count.
+> Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+>
+> Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+>
+> Give one example of an AI suggestion you did not accept as written (including what the AI suggested, why you rejected or changed it, and how you verified your version). It does not have to be a suggestion that was wrong: over-engineered, out of scope, harder to read, or a poor fit for this codebase all count.
+
+- I used Claude Code for this project.
+- It pointed out that the bugs existed in `app.py`,
 
 ---
 
